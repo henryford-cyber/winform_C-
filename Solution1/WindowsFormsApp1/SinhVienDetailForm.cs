@@ -30,9 +30,9 @@ namespace WindowsFormsApp1
         }
         void NapDanhSach()
         {
-            var listLophoc = LophocService.GetFakeData();
-            cmbMaLop.DataSource = listLophoc;
-            cmbMaLop.DisplayMember = "TenLophoc";
+            //var listLophoc = LophocService.GetFakeData();
+            //cmbMaLop.DataSource = listLophoc;
+            //cmbMaLop.DisplayMember = "TenLophoc";
 
 
         }
@@ -74,8 +74,8 @@ namespace WindowsFormsApp1
 
         private void cmbMaLop_SelectedIndexChanged(object sender, EventArgs e)
         {
-            var selectLopHoc = cmbMaLop.SelectedItem as Lophoc;
-            var listSinhvien = SinhVienService.GetFakeDanhsachSV(selectLopHoc.MaLophoc);
+           // var selectLopHoc = cmbMaLop.SelectedItem as Lophoc;
+           // var listSinhvien = SinhVienService.GetFakeDanhsachSV(selectLopHoc.MaLophoc);
             
         }
 

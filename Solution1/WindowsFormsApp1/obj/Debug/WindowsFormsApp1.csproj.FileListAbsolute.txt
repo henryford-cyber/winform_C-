@@ -30,3 +30,17 @@ C:\Users\ADMIN\source\repos\Solution1\WindowsFormsApp1\obj\Debug\WindowsFormsApp
 C:\Users\ADMIN\source\repos\Solution1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.SliderShow.resources
 C:\Users\ADMIN\source\repos\Solution1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.QLSVForm.resources
 C:\Users\ADMIN\source\repos\Solution1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.SinhVienDetailForm.resources
+C:\Users\ADMIN\source\repos\Solution1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FormMain.resources
+C:\Users\ADMIN\source\repos\Solution1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.LopHocForm.resources
+C:\Users\ADMIN\source\repos\Solution1\WindowsFormsApp1\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ADMIN\source\repos\Solution1\WindowsFormsApp1\bin\Debug\Newtonsoft.Json.xml
+C:\Users\ADMIN\source\repos\Solution1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.ChiTietLopHop.resources
+C:\Users\ADMIN\source\repos\Solution1\WindowsFormsApp1\bin\Debug\ExcelDataReader.dll
+C:\Users\ADMIN\source\repos\Solution1\WindowsFormsApp1\bin\Debug\ExcelDataReader.pdb
+C:\Users\ADMIN\source\repos\Solution1\WindowsFormsApp1\bin\Debug\ExcelDataReader.xml
+C:\Users\ADMIN\source\repos\Solution1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.ReadFileExcel.resources
+C:\Users\ADMIN\source\repos\Solution1\WindowsFormsApp1\bin\Debug\ExcelDataReader.DataSet.dll
+C:\Users\ADMIN\source\repos\Solution1\WindowsFormsApp1\bin\Debug\ExcelDataReader.DataSet.pdb
+C:\Users\ADMIN\source\repos\Solution1\WindowsFormsApp1\bin\Debug\ExcelDataReader.DataSet.xml
+C:\Users\ADMIN\source\repos\Solution1\WindowsFormsApp1\bin\Debug\System.Text.Encoding.CodePages.dll
+C:\Users\ADMIN\source\repos\Solution1\WindowsFormsApp1\bin\Debug\System.Text.Encoding.CodePages.xml

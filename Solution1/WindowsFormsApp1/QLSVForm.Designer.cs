@@ -123,9 +123,9 @@ namespace WindowsFormsApp1
             this.txtTimKiem,
             this.toolStripLabel2,
             this.toolStripButton3,
-            this.btnLuuFile,
             this.toolStripButton2,
-            this.toolStripButton1});
+            this.toolStripButton1,
+            this.btnLuuFile});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(986, 27);
@@ -190,8 +190,8 @@ namespace WindowsFormsApp1
             this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
             this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(110, 24);
-            this.toolStripButton2.Text = "Chiều chỉnh";
+            this.toolStripButton2.Size = new System.Drawing.Size(54, 24);
+            this.toolStripButton2.Text = "Sửa";
             this.toolStripButton2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // toolStripButton1

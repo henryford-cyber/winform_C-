@@ -36,6 +36,12 @@
     <Reference Include="Elasticsearch.Net, Version=7.0.0.0, Culture=neutral, PublicKeyToken=96c599bbe3e70f5d, processorArchitecture=MSIL">
       <HintPath>..\packages\Elasticsearch.Net.7.17.4\lib\net461\Elasticsearch.Net.dll</HintPath>
     </Reference>
+    <Reference Include="ExcelDataReader, Version=3.7.0.0, Culture=neutral, PublicKeyToken=93517dbe6a4012fa, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExcelDataReader.3.7.0-develop00310\lib\net45\ExcelDataReader.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelDataReader.DataSet, Version=3.7.0.0, Culture=neutral, PublicKeyToken=93517dbe6a4012fa, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExcelDataReader.DataSet.3.7.0-develop00310\lib\net35\ExcelDataReader.DataSet.dll</HintPath>
+    </Reference>
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.13.0.2-beta2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -47,20 +53,24 @@
     <Reference Include="System.Diagnostics.DiagnosticSource, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Diagnostics.DiagnosticSource.5.0.0\lib\net46\System.Diagnostics.DiagnosticSource.dll</HintPath>
     </Reference>
-    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
     </Reference>
     <Reference Include="System.Numerics" />
     <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
     </Reference>
-    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\net45\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.Extensions, Version=4.1.1.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Runtime.Extensions.4.3.1\lib\net462\System.Runtime.Extensions.dll</HintPath>
       <Private>True</Private>
       <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Text.Encoding.CodePages, Version=7.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encoding.CodePages.7.0.0\lib\net462\System.Text.Encoding.CodePages.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -78,6 +88,12 @@
     </Compile>
     <Compile Include="Caculator.Designer.cs">
       <DependentUpon>Caculator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChiTietLopHop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChiTietLopHop.Designer.cs">
+      <DependentUpon>ChiTietLopHop.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -109,6 +125,12 @@
     <Compile Include="imagesForm.Designer.cs">
       <DependentUpon>imagesForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="LopHocForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LopHocForm.Designer.cs">
+      <DependentUpon>LopHocForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Model\Lophoc.cs" />
     <Compile Include="Model\Sinhvien.cs" />
     <Compile Include="Program.cs" />
@@ -118,6 +140,12 @@
     </Compile>
     <Compile Include="QLSVForm.Designer.cs">
       <DependentUpon>QLSVForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReadFileExcel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReadFileExcel.Designer.cs">
+      <DependentUpon>ReadFileExcel.cs</DependentUpon>
     </Compile>
     <Compile Include="Service\LophocService.cs" />
     <Compile Include="Service\SinhVienService.cs" />
@@ -142,6 +170,9 @@
     <EmbeddedResource Include="Caculator.resx">
       <DependentUpon>Caculator.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ChiTietLopHop.resx">
+      <DependentUpon>ChiTietLopHop.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -157,6 +188,9 @@
     <EmbeddedResource Include="imagesForm.resx">
       <DependentUpon>imagesForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="LopHocForm.resx">
+      <DependentUpon>LopHocForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -168,6 +202,9 @@
     </Compile>
     <EmbeddedResource Include="QLSVForm.resx">
       <DependentUpon>QLSVForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReadFileExcel.resx">
+      <DependentUpon>ReadFileExcel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="settingForm.resx">
       <DependentUpon>settingForm.cs</DependentUpon>

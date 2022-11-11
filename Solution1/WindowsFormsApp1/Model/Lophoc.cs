@@ -10,6 +10,7 @@ namespace WindowsFormsApp1.Model
     {
         public int MaLophoc { get; set; }
         public string TenLophoc { get; set; }
-        
+        public int SoSinhVien { get; set; }
+
     }
 }

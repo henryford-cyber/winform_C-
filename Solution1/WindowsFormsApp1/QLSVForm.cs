@@ -23,7 +23,8 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
             sinhvienPath = Path.Combine(Application.StartupPath, "sinhvien.txt");
-            dsSV = SinhVienService.GetAllSinhvienFromFile(sinhvienPath);
+            dsSV = SinhVienService.danhsahsinhvienDocFile(sinhvienPath);
+            NapDanhSachLopHoc();
         }
         public int GetSelectedRow(string MaSinhVien)
         {
@@ -41,11 +42,12 @@ namespace WindowsFormsApp1
         {
             var selectLopHoc = cbbLophoc.SelectedItem as Lophoc;
             var lsSinhVien = dsSV.Where(t => t.MaLopHoc == selectLopHoc?.MaLophoc).ToList();
+           //.DataSource = lsSinhVien;
             dgvSinhvien.DataSource = lsSinhVien;
         }
         void NapDanhSachLopHoc()
         {
-            var listLophoc = LophocService.GetFakeData(); 
+            var listLophoc = LophocService.danhsachlophoc(); 
             cbbLophoc.DataSource = listLophoc;
             cbbLophoc.DisplayMember = "TenLophoc";
 
@@ -63,16 +65,12 @@ namespace WindowsFormsApp1
 
         private void cbbLophoc_SelectedIndexChanged(object sender, EventArgs e)
         {
-            var selectLopHoc = cbbLophoc.SelectedItem as Lophoc;
-            //var listSinhvien = SinhVienService.GetFakeDanhsachSV(selectLopHoc.MaLophoc);
-            //dgvSinhvien.DataSource = listSinhvien;
-            var listSinhvien = dsSV.Where(t=>t.MaLopHoc==selectLopHoc.MaLophoc).ToList();
-            lblTongsosinhvien.Text = listSinhvien.Count.ToString();
+            NapDanhSachSinhvien();
         }
 
-        private void txtTimKiem_KeyPress(object sender, KeyPressEventArgs e)
+        private void txtTimKiem_KeyPress(object sender, KeyPressEventArgs t)
         {
-            if (e.KeyChar == 13)
+            if (t.KeyChar == 13)
             {
                 var keyWord = txtTimKiem.Text;
                 var selectedLopHoc = cbbLophoc.SelectedItem as Lophoc;

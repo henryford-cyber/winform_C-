@@ -11,7 +11,7 @@ namespace WindowsFormsApp1.Service
 {
   public class SinhVienService
     {
-        public static List<Sinhvien> GetAllSinhvienFromFile(string path)
+        public static List<Sinhvien>danhsahsinhvienDocFile(string path)
         {
             //var lines=  File.ReadAllLines(path, Encoding.UTF8);
             //List<Sinhvien> ls = new List<Sinhvien>();
@@ -26,16 +26,16 @@ namespace WindowsFormsApp1.Service
             return rs;
         }
 
-        public static List <Sinhvien> GetFakeAllSinhvien()
+        public static List <Sinhvien> danhsachsinhvien()
         {
-            var ho = new string[] { "Phan", "Nguyễn", "Trần", "Ngô", "Phạm",};
+            var ho = new string[] { "Phan"};
             var ten = new string[] { "Nam", "Hiếu", "Tân", "Nghĩa", "Như" ,"Tài","Hoàng" };
             var data = new List<Sinhvien>();
             Random random = new Random();
-            var listLopHoc = LophocService.GetFakeData();
+            var listLopHoc = LophocService.danhsachlophoc();
             foreach(var lophoc in listLopHoc)
             {
-                for(int i = 0; i < 10; i++)
+                for(int i = 0; i < 5; i++)
                 {
                     Sinhvien sv = new Sinhvien
                     {
@@ -46,7 +46,7 @@ namespace WindowsFormsApp1.Service
                         NgaySinh = new DateTime(random.Next(1990,2002), random.Next(1,12), random.Next(1,28)),
                         DiaChi = "Hương xuan hương trà Huế",
                         GioiTinh = (GIOITINH)random.Next(3),
-                        MaSinhVien = $"IT{lophoc.MaLophoc * 10 + i}",
+                        MaSinhVien = $"IT{lophoc.MaLophoc * 1 + i}",
                     };
                     data.Add(sv);
                    
@@ -55,16 +55,16 @@ namespace WindowsFormsApp1.Service
             }
             return data;
         }
-        public static List<Sinhvien>GetFakeDanhsachSV(int malop)
+        public static List<Sinhvien>danhsachsinhvientheomalop(int malop)
         {
-            var listSinhVien = GetAllSinhvienFromFile();
+            var listSinhVien = danhsachsinhvien();
             var rs= listSinhVien.Where(e => e.MaLopHoc == malop).ToList();
 
             return rs;
         }
-        public static List<Sinhvien> GetFakeDanhSachsinhvien(int malop ,string keyWord) 
+        public static List<Sinhvien> danhsachsinhvientimkiem(int malop ,string keyWord) 
         { 
-                var listSinhVien = GetFakeAllSinhvien();
+                var listSinhVien = danhsachsinhvien();
                 var result = listSinhVien.Where(e => 
                 e.MaLopHoc == malop && (
                 e.HovaTen.IndexOf(keyWord,StringComparison.OrdinalIgnoreCase)>0 ||e.MaSinhVien.IndexOf(keyWord, StringComparison.OrdinalIgnoreCase)>0)

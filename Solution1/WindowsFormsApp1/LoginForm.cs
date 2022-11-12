@@ -19,7 +19,7 @@ namespace WindowsFormsApp1
         public LoginForm()
         {
             listAccount = AccountService.getAllAcount();
-            MessageBox.Show(listAccount.Count.ToString());
+           // MessageBox.Show(listAccount.Count.ToString());
             InitializeComponent();
         }
 
@@ -30,7 +30,24 @@ namespace WindowsFormsApp1
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-             
+            bool isLogin = false;  
+            FormMain main = new FormMain();
+            foreach(var c in listAccount)
+            {
+               
+                if (txtUsername.Text == c.username && txtPassword.Text == c.password)
+                { 
+                    main.ShowDialog();
+                    isLogin = true; 
+                    return;
+                    
+                }
+                 
+            }
+            if (!isLogin)
+            {
+                MessageBox.Show("Tai khoan hoac mat khau sai vui long nhap lai ", "Thong bao !", MessageBoxButtons.OK, MessageBoxIcon.Question);
+            }
         }
     }
 }

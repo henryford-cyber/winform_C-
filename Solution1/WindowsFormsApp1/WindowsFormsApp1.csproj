@@ -125,12 +125,19 @@
     <Compile Include="imagesForm.Designer.cs">
       <DependentUpon>imagesForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="LopHocForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="LopHocForm.Designer.cs">
       <DependentUpon>LopHocForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\Account.cs" />
     <Compile Include="Model\Lophoc.cs" />
     <Compile Include="Model\Sinhvien.cs" />
     <Compile Include="Program.cs" />
@@ -147,6 +154,7 @@
     <Compile Include="ReadFileExcel.Designer.cs">
       <DependentUpon>ReadFileExcel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Service\AccountService.cs" />
     <Compile Include="Service\LophocService.cs" />
     <Compile Include="Service\SinhVienService.cs" />
     <Compile Include="settingForm.cs">
@@ -187,6 +195,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="imagesForm.resx">
       <DependentUpon>imagesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LopHocForm.resx">
       <DependentUpon>LopHocForm.cs</DependentUpon>
@@ -233,6 +244,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="amthanh\" />
+    <Folder Include="images\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,0 +1,183 @@
+/* color: #2196F3; */
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body,
+p,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+
+
+.flex {
+    display: flex;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.relative {
+    position: relative;
+}
+
+#Header {
+    position: relative;
+    background-color: #417690;
+    padding: 0 50px;
+}
+
+#Header .navbar {
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    gap: 10px;
+}
+
+#Header .navbar .nav-item {
+    font-weight: 300;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+#Header .navbar .nav-item {
+    color: white;
+}
+
+#Header .navbar .nav-item .wellcome {
+    color: #f5dd5d;
+}
+
+#Header .navbar .nav-item .name-user {
+    color: #f5dd5d;
+}
+
+#Header .logo {
+    padding: 3px 0 8px 0px;
+}
+
+#Header .logo .text-logo {
+    color: #f5dd5d;
+    font-weight: 300;
+    font-size: 24px;
+}
+
+#Content {
+    padding: 0 50px;
+}
+
+#Content {
+    padding-top: 20px;
+}
+
+#Content .row .col-5 .table .blue .vkbike {
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+#Content .row .col-5 .table .blue {
+    background-color: #79aec8;
+}
+
+#Content .row .col-5 .table tbody .title a {
+    color: #447e9b;
+    text-decoration: none;
+    font-weight: 600;
+    text-align: left;
+    font-size: 13px;
+    line-height: 16px;
+}
+
+#Content .row .col-5 .table tbody .action {
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+#Content .row .col-5 .table tbody .action a {
+    gap: 5px;
+}
+
+#Content .row .col-5 .table tbody .action .add i {
+    color: green;
+}
+
+#Content .row .col-5 .table tbody .action .update i {
+    color: orange;
+}
+
+#Content .row .col-5 .table tbody .action a p {
+    color: #447e9b;
+    text-decoration: none;
+
+    text-align: left;
+    font-size: 13px;
+    line-height: 16px;
+}
+
+#Content .row .col-3 .my-actions {
+    background-color: rgb(228 228 228 / 31%);
+    width: 300px;
+}
+
+#Content .row .col-3 .my-actions li {
+    padding: 10px 20px;
+
+}
+
+#Content .row .col-3 .my-actions .recent-actions {
+    border-bottom: 1px solid #e8e8e8;
+    font-size: 18px;
+}
+
+#Content .row .col-3 .my-actions .text-actions {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#Content .row .col-3 .my-actions .action a {
+    color: #447e9b;
+    font-size: 15px;
+
+}
+
+#Content .row .col-3 .my-actions .action a i {
+    align-self: center;
+    color: green;
+    padding: 0px 5px 5px 12px;
+}
+
+#Content .row .col-3 .my-actions .action .customer {
+    font-size: 12px;
+    color: #666;
+    padding: 0 30px;
+
+}

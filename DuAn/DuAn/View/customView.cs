@@ -8,6 +8,7 @@ using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DuAn.Component;
 
 namespace DuAn.View
 {
@@ -36,6 +37,16 @@ namespace DuAn.View
             }
             lblO.ForeColor = ThemeColor.SecondaryColor;
             lblK.ForeColor = ThemeColor.PrimaryColor;
+        }
+
+        private void rjTextBox1__TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rjTextBox1__TextChanged_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

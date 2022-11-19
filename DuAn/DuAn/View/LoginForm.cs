@@ -1,4 +1,7 @@
 ﻿using DuAn.Connection;
+using DuAn.Model;
+using MySql.Data.MySqlClient;
+using Org.BouncyCastle.Asn1.Pkcs;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,21 +12,22 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Windows.UI.Xaml;
 
 namespace DuAn.View
 {
     public partial class LoginForm : Form
     {
-         
+        public static Account accLogin = new Account();
         public LoginForm()
         {
             InitializeComponent(); 
             this.Text = string.Empty;
             this.ControlBox = false;
         }
-        SQLConfig config = new SQLConfig();
-        string sql; 
-
+            SQLConfig config = new SQLConfig();
+         string sql; 
+        
         private void LoginForm_Load(object sender, EventArgs e)
         {
 
@@ -48,15 +52,38 @@ namespace DuAn.View
         {
             this.Dispose();
         }
+        public static void LoadData(string sql)
+        {
 
+            string cs = @"server=localhost;userid=root;password='';database=quanlysinhvien";
+            using var con = new MySqlConnection(cs);
+            con.Open();
+
+            using var cmd = new MySqlCommand(sql, con);
+            using MySqlDataReader rdr = cmd.ExecuteReader();
+            while (rdr.Read())
+            {
+                accLogin.Id = rdr.GetInt32(0);
+                accLogin.fullname = rdr.GetString(1);
+                accLogin.phonenumber = rdr.GetInt32(2);
+                accLogin.address = rdr.GetString(3);
+                accLogin.username = rdr.GetString(4);
+                accLogin.password = rdr.GetString(5);
+                accLogin.images = rdr.GetString(6);
+                accLogin.type = rdr.GetString(7);
+            }
+        }
         private void btnLogin_Click(object sender, EventArgs e)
         {
+            
             sql = " SELECT* FROM account WHERE username = '" + txtusername.Text + "' and password = '" + txtpass.Text + "'";
             config.singleResult(sql);
+            LoadData(sql);
             if (config.dt.Rows.Count > 0)
             {
                 FormMenu home = new FormMenu();
-                home.ShowDialog(); 
+                this.Hide();
+                home.ShowDialog();  
                   this.Close();
             }
             else
@@ -77,8 +104,27 @@ namespace DuAn.View
 
         private void label5_Click(object sender, EventArgs e)
         {
+            this.Hide();
             SignUpForm signUp = new SignUpForm();
             signUp.ShowDialog(); 
+            this.Close();
+        }
+
+        private void txtusername_Validating(object sender, CancelEventArgs e)
+        {
+            if (txtusername.Text == string.Empty)
+            {
+                MessageBox.Show("Tai khoan khong duoc de trong !!","Thong bao !",MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void txtpass_Validating(object sender, CancelEventArgs e)
+        {
+            if (txtpass.Text == string.Empty)
+            {
+                MessageBox.Show("Mat khau khong duoc de trong !!", "Thong bao !", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            
         }
     }
 }

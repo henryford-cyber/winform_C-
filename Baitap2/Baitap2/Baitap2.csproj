@@ -9,6 +9,7 @@
   <ItemGroup>
     <PackageReference Include="ExcelDataReader" Version="3.7.0-develop00310" />
     <PackageReference Include="ExcelDataReader.DataSet" Version="3.7.0-develop00310" />
+    <PackageReference Include="Microsoft.Office.Interop.Excel" Version="12.0.4518.1014" />
     <PackageReference Include="System.Text.Encoding.CodePages" Version="7.0.0" />
   </ItemGroup>
 

@@ -95,41 +95,6 @@
     <Compile Include="ChiTietLopHop.Designer.cs">
       <DependentUpon>ChiTietLopHop.cs</DependentUpon>
     </Compile>
-    <Compile Include="Components\ComboboxItem.cs" />
-    <Compile Include="Components\CTPanel.cs" />
-    <Compile Include="Components\ForgotPassword.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Components\ForgotPassword.Designer.cs">
-      <DependentUpon>ForgotPassword.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Components\PanelControl\DashboardPanel.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Components\PanelControl\DashboardPanel.Designer.cs">
-      <DependentUpon>DashboardPanel.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Components\PreLoader.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Components\PreLoader.Designer.cs">
-      <DependentUpon>PreLoader.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Components\ProductItem.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Components\ProductItem.Designer.cs">
-      <DependentUpon>ProductItem.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Components\RJButton.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Components\RJTextBox.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Components\RJTextBox.Designer.cs">
-      <DependentUpon>RJTextBox.cs</DependentUpon>
-    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -215,21 +180,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ChiTietLopHop.resx">
       <DependentUpon>ChiTietLopHop.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Components\ForgotPassword.resx">
-      <DependentUpon>ForgotPassword.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Components\PanelControl\DashboardPanel.resx">
-      <DependentUpon>DashboardPanel.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Components\PreLoader.resx">
-      <DependentUpon>PreLoader.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Components\ProductItem.resx">
-      <DependentUpon>ProductItem.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Components\RJTextBox.resx">
-      <DependentUpon>RJTextBox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

@@ -7,11 +7,5 @@
     <Compile Update="ReadFileExcel.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="TestButton.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="RJButton.cs">
-      <SubType>Component</SubType>
-    </Compile>
   </ItemGroup>
 </Project>

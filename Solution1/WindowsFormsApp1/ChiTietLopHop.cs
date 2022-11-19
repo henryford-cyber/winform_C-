@@ -19,7 +19,7 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
             this.lopHoc = lopHoc;
-           txtTenLop.Text = lopHoc?.TenLophoc;
+            txtTenLop.Text = lopHoc?.TenLophoc;
             
         }
 

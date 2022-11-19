@@ -97,6 +97,7 @@
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(374, 32);
             this.txtUsername.TabIndex = 20;
+            this.txtUsername.Validating += new System.ComponentModel.CancelEventHandler(this.txtUsername_Validating);
             // 
             // txtPhone
             // 
@@ -106,6 +107,7 @@
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.Size = new System.Drawing.Size(374, 32);
             this.txtPhone.TabIndex = 19;
+            this.txtPhone.Validating += new System.ComponentModel.CancelEventHandler(this.txtPhone_Validating);
             // 
             // label5
             // 
@@ -168,6 +170,7 @@
             this.txtFullname.Name = "txtFullname";
             this.txtFullname.Size = new System.Drawing.Size(374, 32);
             this.txtFullname.TabIndex = 25;
+            this.txtFullname.Validating += new System.ComponentModel.CancelEventHandler(this.txtFullname_Validating);
             // 
             // label6
             // 
@@ -188,6 +191,8 @@
             this.txtAddreee.Name = "txtAddreee";
             this.txtAddreee.Size = new System.Drawing.Size(374, 81);
             this.txtAddreee.TabIndex = 27;
+            this.txtAddreee.TextChanged += new System.EventHandler(this.txtAddreee_TextChanged);
+            this.txtAddreee.Validating += new System.ComponentModel.CancelEventHandler(this.txtAddreee_Validating);
             // 
             // label7
             // 
@@ -218,6 +223,7 @@
             this.txtPass.Size = new System.Drawing.Size(374, 32);
             this.txtPass.TabIndex = 20;
             this.txtPass.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            this.txtPass.Validating += new System.ComponentModel.CancelEventHandler(this.txtPass_Validating);
             // 
             // SignUpForm
             // 

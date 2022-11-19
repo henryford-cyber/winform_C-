@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DuAn.Component;
+using DuAn.View;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,7 +15,7 @@ namespace DuAn
 {
     public partial class FormMenu : Form
     {
-        private Button currentButton;
+        private Button currentButton; 
         private Random random;
         private int tempIndex;
         private Form activeForm;
@@ -62,6 +64,7 @@ namespace DuAn
                 }
             }
         }
+        
         private void DisableButton()
         {
             foreach (Control previousBtn in panelMenu.Controls)
@@ -80,6 +83,7 @@ namespace DuAn
             if (activeForm != null)
                 activeForm.Close();
             ActivateButton(btnSender);
+            
             activeForm = childForm;
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
@@ -92,12 +96,12 @@ namespace DuAn
         }
         private void btnProduct_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new View.productView(), sender);
+            OpenChildForm(new View.classView(), sender);
         }
 
         private void btnCustomer_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new View.customView(), sender);
+           
         }
 
         private void btnCloseChildForm_Click(object sender, EventArgs e)
@@ -144,6 +148,25 @@ namespace DuAn
         private void FormMenu_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            LoginForm loginForm = new LoginForm();
+            loginForm.ShowDialog();
+
+            this.Close();
+        }
+
+        private void btnProfile_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new View.ProfileView(), sender);
+        }
+
+        private void btnStudent_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new View.studentView(), sender);
         }
     }
 }

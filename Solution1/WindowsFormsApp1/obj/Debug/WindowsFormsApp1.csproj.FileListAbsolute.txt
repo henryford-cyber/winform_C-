@@ -118,7 +118,6 @@ C:\Users\ADMIN\source\repos\winform_C-\Solution1\WindowsFormsApp1\bin\Debug\Syst
 C:\Users\ADMIN\source\repos\winform_C-\Solution1\WindowsFormsApp1\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\ADMIN\source\repos\winform_C-\Solution1\WindowsFormsApp1\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\ADMIN\source\repos\winform_C-\Solution1\WindowsFormsApp1\bin\Debug\System.Text.Encoding.CodePages.xml
-C:\Users\ADMIN\source\repos\winform_C-\Solution1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
 C:\Users\ADMIN\source\repos\winform_C-\Solution1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Caculator.resources
 C:\Users\ADMIN\source\repos\winform_C-\Solution1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.ChiTietLopHop.resources
 C:\Users\ADMIN\source\repos\winform_C-\Solution1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
@@ -139,8 +138,5 @@ C:\Users\ADMIN\source\repos\winform_C-\Solution1\WindowsFormsApp1\obj\Debug\Wind
 C:\Users\ADMIN\source\repos\winform_C-\Solution1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CopyComplete
 C:\Users\ADMIN\source\repos\winform_C-\Solution1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\ADMIN\source\repos\winform_C-\Solution1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
-C:\Users\ADMIN\source\repos\winform_C-\Solution1\WindowsFormsApp1\obj\Debug\Project.Components.ForgotPassword.resources
-C:\Users\ADMIN\source\repos\winform_C-\Solution1\WindowsFormsApp1\obj\Debug\Project.Components.PanelControl.DashboardPanel.resources
-C:\Users\ADMIN\source\repos\winform_C-\Solution1\WindowsFormsApp1\obj\Debug\Project.Components.PreLoader.resources
-C:\Users\ADMIN\source\repos\winform_C-\Solution1\WindowsFormsApp1\obj\Debug\Project.Components.ProductItem.resources
-C:\Users\ADMIN\source\repos\winform_C-\Solution1\WindowsFormsApp1\obj\Debug\Project.Components.RJTextBox.resources
+C:\Users\ADMIN\source\repos\winform_C-\Solution1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+C:\Users\ADMIN\source\repos\winform_C-\Solution1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.SuggestedBindingRedirects.cache

@@ -8,8 +8,9 @@ namespace DuAn.Model
 {
     public class Class
     {
-        public int id { get; set; }
-        public string name { get; set; }
+        public int classId { get; set; }
+        public string className { get; set; } 
+        public string homeroomTeacher { get; set; }
         public int totalStudent { get; set; }
     }
 }

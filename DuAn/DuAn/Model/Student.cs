@@ -9,17 +9,14 @@ namespace DuAn.Model
     public class Student
     {
         public int id { get; set; }
-        public string name { get; set; }
-        public int age { get; set; }
-        public SEX sex { get; set; }
-        public enum SEX
-        { 
-            Male,Female,ThirdGender
-        }
+
+        public string name { get; set; } 
+        public string sex { get; set; } 
         public DateTime birthDay { get; set; }
         public String address { get; set; }
 
-        public int class_id { get; set; }  
+        public int class_id { get; set; }
 
+        
     }
 }

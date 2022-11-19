@@ -43,6 +43,8 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
+            this.lblErroruser = new System.Windows.Forms.Label();
+            this.lblErrorpass = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -60,7 +62,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("RussellSquare", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(24, 245);
+            this.label2.Location = new System.Drawing.Point(24, 252);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(116, 25);
             this.label2.TabIndex = 1;
@@ -107,18 +109,23 @@
             this.txtusername.Font = new System.Drawing.Font("RussellSquare", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtusername.Location = new System.Drawing.Point(147, 177);
             this.txtusername.Name = "txtusername";
+            this.txtusername.PlaceholderText = "    Enter username";
             this.txtusername.Size = new System.Drawing.Size(271, 32);
             this.txtusername.TabIndex = 5;
             this.txtusername.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtusername.Validating += new System.ComponentModel.CancelEventHandler(this.txtusername_Validating);
             // 
             // txtpass
             // 
             this.txtpass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtpass.Font = new System.Drawing.Font("RussellSquare", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtpass.Location = new System.Drawing.Point(147, 238);
+            this.txtpass.Location = new System.Drawing.Point(146, 245);
             this.txtpass.Name = "txtpass";
+            this.txtpass.PasswordChar = '*';
+            this.txtpass.PlaceholderText = "    Enter password";
             this.txtpass.Size = new System.Drawing.Size(271, 32);
             this.txtpass.TabIndex = 6;
+            this.txtpass.Validating += new System.ComponentModel.CancelEventHandler(this.txtpass_Validating);
             // 
             // btnLogin
             // 
@@ -127,7 +134,7 @@
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogin.Font = new System.Drawing.Font("RussellSquare", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Location = new System.Drawing.Point(278, 286);
+            this.btnLogin.Location = new System.Drawing.Point(277, 306);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Padding = new System.Windows.Forms.Padding(0, 0, 0, 7);
             this.btnLogin.Size = new System.Drawing.Size(140, 40);
@@ -148,16 +155,16 @@
             // 
             // btnClose
             // 
-            this.btnClose.BackColor = System.Drawing.Color.Red;
+            this.btnClose.BackColor = System.Drawing.Color.Transparent;
             this.btnClose.FlatAppearance.BorderSize = 0;
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClose.Font = new System.Drawing.Font("RussellSquare", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnClose.ForeColor = System.Drawing.Color.White;
-            this.btnClose.Location = new System.Drawing.Point(985, 12);
+            this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
+            this.btnClose.Location = new System.Drawing.Point(984, 4);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(44, 40);
+            this.btnClose.Size = new System.Drawing.Size(54, 48);
             this.btnClose.TabIndex = 9;
-            this.btnClose.Text = "X";
             this.btnClose.UseVisualStyleBackColor = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
@@ -204,12 +211,32 @@
             this.label6.TabIndex = 13;
             this.label6.Text = "Sign in with another form";
             // 
+            // lblErroruser
+            // 
+            this.lblErroruser.AutoSize = true;
+            this.lblErroruser.ForeColor = System.Drawing.Color.Red;
+            this.lblErroruser.Location = new System.Drawing.Point(156, 220);
+            this.lblErroruser.Name = "lblErroruser";
+            this.lblErroruser.Size = new System.Drawing.Size(0, 15);
+            this.lblErroruser.TabIndex = 14;
+            // 
+            // lblErrorpass
+            // 
+            this.lblErrorpass.AutoSize = true;
+            this.lblErrorpass.ForeColor = System.Drawing.Color.Red;
+            this.lblErrorpass.Location = new System.Drawing.Point(146, 285);
+            this.lblErrorpass.Name = "lblErrorpass";
+            this.lblErrorpass.Size = new System.Drawing.Size(0, 15);
+            this.lblErrorpass.TabIndex = 15;
+            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1041, 533);
+            this.Controls.Add(this.lblErrorpass);
+            this.Controls.Add(this.lblErroruser);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
@@ -252,5 +279,7 @@
         private Button button4;
         private Button button5;
         private Label label6;
+        private Label lblErroruser;
+        private Label lblErrorpass;
     }
 }

@@ -23,7 +23,7 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
             sinhvienPath = Path.Combine(Application.StartupPath, "sinhvien.txt");
-            dsSV = SinhVienService.danhsahsinhvienDocFile(sinhvienPath);
+            dsSV = SinhVienService.danhsachsinhvien();
             NapDanhSachLopHoc();
         }
         public int GetSelectedRow(string MaSinhVien)
@@ -154,6 +154,11 @@ namespace WindowsFormsApp1
         }
 
         private void QLSVForm_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+        }
+
+        private void toolStripButton2_Click(object sender, EventArgs e)
         {
 
         }

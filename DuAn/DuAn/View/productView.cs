@@ -8,6 +8,7 @@ using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DuAn.Component;
 
 namespace DuAn.View
 {
@@ -30,8 +31,8 @@ namespace DuAn.View
                     btn.FlatAppearance.BorderColor = ThemeColor.SecondaryColor;
                 }
             }
-            lblO.ForeColor = ThemeColor.SecondaryColor;
-            lblK.ForeColor = ThemeColor.PrimaryColor;
+           // lblO.ForeColor = ThemeColor.SecondaryColor;
+            //lblK.ForeColor = ThemeColor.PrimaryColor;
         }
 
         private void productView_Load(object sender, EventArgs e)

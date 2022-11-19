@@ -43,7 +43,6 @@ C:\Users\Administrator\Desktop\GitHub\winform_C-\Baitap2\Baitap2\obj\Debug\netco
 C:\Users\Administrator\Desktop\GitHub\winform_C-\Baitap2\Baitap2\obj\Debug\netcoreapp3.1\Baitap2.dll
 C:\Users\Administrator\Desktop\GitHub\winform_C-\Baitap2\Baitap2\obj\Debug\netcoreapp3.1\Baitap2.pdb
 C:\Users\Administrator\Desktop\GitHub\winform_C-\Baitap2\Baitap2\obj\Debug\netcoreapp3.1\Baitap2.genruntimeconfig.cache
-C:\Users\ADMIN\source\repos\winform_C-\Baitap2\Baitap2\obj\Debug\netcoreapp3.1\Baitap2.csprojAssemblyReference.cache
 C:\Users\ADMIN\source\repos\winform_C-\Baitap2\Baitap2\obj\Debug\netcoreapp3.1\Baitap2.FormWorker.resources
 C:\Users\ADMIN\source\repos\winform_C-\Baitap2\Baitap2\obj\Debug\netcoreapp3.1\Baitap2.Properties.Resources.resources
 C:\Users\ADMIN\source\repos\winform_C-\Baitap2\Baitap2\obj\Debug\netcoreapp3.1\Baitap2.ReadFileExcel.resources
@@ -53,7 +52,6 @@ C:\Users\ADMIN\source\repos\winform_C-\Baitap2\Baitap2\obj\Debug\netcoreapp3.1\B
 C:\Users\ADMIN\source\repos\winform_C-\Baitap2\Baitap2\obj\Debug\netcoreapp3.1\Baitap2.csproj.CoreCompileInputs.cache
 C:\Users\ADMIN\source\repos\winform_C-\Baitap2\Baitap2\obj\Debug\netcoreapp3.1\Baitap2.dll
 C:\Users\ADMIN\source\repos\winform_C-\Baitap2\Baitap2\obj\Debug\netcoreapp3.1\Baitap2.pdb
-C:\Users\ADMIN\source\repos\winform_C-\Baitap2\Baitap2\obj\Debug\netcoreapp3.1\Baitap2.TestButton.resources
 C:\Users\ADMIN\source\repos\winform_C-\Baitap2\Baitap2\bin\Debug\netcoreapp3.1\Baitap2.exe
 C:\Users\ADMIN\source\repos\winform_C-\Baitap2\Baitap2\bin\Debug\netcoreapp3.1\Baitap2.deps.json
 C:\Users\ADMIN\source\repos\winform_C-\Baitap2\Baitap2\bin\Debug\netcoreapp3.1\Baitap2.runtimeconfig.json
@@ -66,4 +64,6 @@ C:\Users\ADMIN\source\repos\winform_C-\Baitap2\Baitap2\bin\Debug\netcoreapp3.1\S
 C:\Users\ADMIN\source\repos\winform_C-\Baitap2\Baitap2\bin\Debug\netcoreapp3.1\System.Text.Encoding.CodePages.dll
 C:\Users\ADMIN\source\repos\winform_C-\Baitap2\Baitap2\obj\Debug\netcoreapp3.1\Baitap2.csproj.CopyComplete
 C:\Users\ADMIN\source\repos\winform_C-\Baitap2\Baitap2\obj\Debug\netcoreapp3.1\Baitap2.genruntimeconfig.cache
-C:\Users\ADMIN\source\repos\winform_C-\Baitap2\Baitap2\obj\Debug\netcoreapp3.1\Baitap2.RJButton.resources
+C:\Users\ADMIN\source\repos\winform_C-\Baitap2\Baitap2\obj\Debug\netcoreapp3.1\Baitap2.csproj.AssemblyReference.cache
+C:\Users\ADMIN\source\repos\winform_C-\Baitap2\Baitap2\obj\Debug\netcoreapp3.1\Baitap2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ADMIN\source\repos\winform_C-\Baitap2\Baitap2\bin\Debug\netcoreapp3.1\Microsoft.Office.Interop.Excel.dll

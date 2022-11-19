@@ -17,7 +17,7 @@ namespace WindowsFormsApp1
             System.Text.Encoding.RegisterProvider(System.Text.CodePagesEncodingProvider.Instance);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LoginForm());
+            Application.Run(new QLSVForm());
 
         }
     }

@@ -33,6 +33,12 @@ namespace WindowsFormsApp1
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QLSVForm));
             this.panel1 = new System.Windows.Forms.Panel();
             this.dgvSinhvien = new System.Windows.Forms.DataGridView();
+            this.maSinhVienDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tenDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gioiTinhDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ngaySinhDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.diaChiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sinhvienBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.lblTongsosinhvien = new System.Windows.Forms.ToolStripStatusLabel();
@@ -42,24 +48,18 @@ namespace WindowsFormsApp1
             this.txtTimKiem = new System.Windows.Forms.ToolStripTextBox();
             this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
             this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
-            this.btnLuuFile = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.btnLuuFile = new System.Windows.Forms.ToolStripButton();
             this.label1 = new System.Windows.Forms.Label();
             this.cbbLophoc = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.maSinhVienDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tenDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.gioiTinhDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ngaySinhDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.diaChiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sinhvienBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSinhvien)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sinhvienBindingSource)).BeginInit();
             this.statusStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.sinhvienBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -90,6 +90,46 @@ namespace WindowsFormsApp1
             this.dgvSinhvien.Size = new System.Drawing.Size(986, 516);
             this.dgvSinhvien.TabIndex = 3;
             this.dgvSinhvien.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSinhvien_CellContentClick);
+            // 
+            // maSinhVienDataGridViewTextBoxColumn
+            // 
+            this.maSinhVienDataGridViewTextBoxColumn.DataPropertyName = "MaSinhVien";
+            this.maSinhVienDataGridViewTextBoxColumn.HeaderText = "Mã Sinh Viên";
+            this.maSinhVienDataGridViewTextBoxColumn.Name = "maSinhVienDataGridViewTextBoxColumn";
+            this.maSinhVienDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // tenDataGridViewTextBoxColumn
+            // 
+            this.tenDataGridViewTextBoxColumn.DataPropertyName = "HovaTen";
+            this.tenDataGridViewTextBoxColumn.HeaderText = "Họ và tên";
+            this.tenDataGridViewTextBoxColumn.Name = "tenDataGridViewTextBoxColumn";
+            this.tenDataGridViewTextBoxColumn.ReadOnly = true;
+            this.tenDataGridViewTextBoxColumn.Width = 200;
+            // 
+            // gioiTinhDataGridViewTextBoxColumn
+            // 
+            this.gioiTinhDataGridViewTextBoxColumn.DataPropertyName = "GIOITINHStr";
+            this.gioiTinhDataGridViewTextBoxColumn.HeaderText = "Giới Tính";
+            this.gioiTinhDataGridViewTextBoxColumn.Name = "gioiTinhDataGridViewTextBoxColumn";
+            this.gioiTinhDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // ngaySinhDataGridViewTextBoxColumn
+            // 
+            this.ngaySinhDataGridViewTextBoxColumn.DataPropertyName = "NgaySinh";
+            this.ngaySinhDataGridViewTextBoxColumn.HeaderText = "Ngày Sinh";
+            this.ngaySinhDataGridViewTextBoxColumn.Name = "ngaySinhDataGridViewTextBoxColumn";
+            this.ngaySinhDataGridViewTextBoxColumn.Width = 200;
+            // 
+            // diaChiDataGridViewTextBoxColumn
+            // 
+            this.diaChiDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.diaChiDataGridViewTextBoxColumn.DataPropertyName = "DiaChi";
+            this.diaChiDataGridViewTextBoxColumn.HeaderText = "Địa Chỉ";
+            this.diaChiDataGridViewTextBoxColumn.Name = "diaChiDataGridViewTextBoxColumn";
+            // 
+            // sinhvienBindingSource
+            // 
+            this.sinhvienBindingSource.DataSource = typeof(WindowsFormsApp1.Model.Sinhvien);
             // 
             // statusStrip1
             // 
@@ -173,16 +213,6 @@ namespace WindowsFormsApp1
             this.toolStripButton3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.toolStripButton3.Click += new System.EventHandler(this.btnXoa_Click);
             // 
-            // btnLuuFile
-            // 
-            this.btnLuuFile.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.btnLuuFile.Image = ((System.Drawing.Image)(resources.GetObject("btnLuuFile.Image")));
-            this.btnLuuFile.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnLuuFile.Name = "btnLuuFile";
-            this.btnLuuFile.Size = new System.Drawing.Size(68, 24);
-            this.btnLuuFile.Text = "Luu File";
-            this.btnLuuFile.Click += new System.EventHandler(this.toolStripButton4_Click);
-            // 
             // toolStripButton2
             // 
             this.toolStripButton2.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
@@ -193,6 +223,7 @@ namespace WindowsFormsApp1
             this.toolStripButton2.Size = new System.Drawing.Size(54, 24);
             this.toolStripButton2.Text = "Sửa";
             this.toolStripButton2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolStripButton2.Click += new System.EventHandler(this.toolStripButton2_Click);
             // 
             // toolStripButton1
             // 
@@ -205,6 +236,16 @@ namespace WindowsFormsApp1
             this.toolStripButton1.Text = "Thêm";
             this.toolStripButton1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
+            // 
+            // btnLuuFile
+            // 
+            this.btnLuuFile.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.btnLuuFile.Image = ((System.Drawing.Image)(resources.GetObject("btnLuuFile.Image")));
+            this.btnLuuFile.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnLuuFile.Name = "btnLuuFile";
+            this.btnLuuFile.Size = new System.Drawing.Size(68, 24);
+            this.btnLuuFile.Text = "Luu File";
+            this.btnLuuFile.Click += new System.EventHandler(this.toolStripButton4_Click);
             // 
             // label1
             // 
@@ -241,49 +282,9 @@ namespace WindowsFormsApp1
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.label3.Location = new System.Drawing.Point(266, 9);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(469, 44);
+            this.label3.Size = new System.Drawing.Size(468, 44);
             this.label3.TabIndex = 4;
             this.label3.Text = "QUAN LY SINH VIEN";
-            // 
-            // maSinhVienDataGridViewTextBoxColumn
-            // 
-            this.maSinhVienDataGridViewTextBoxColumn.DataPropertyName = "MaSinhVien";
-            this.maSinhVienDataGridViewTextBoxColumn.HeaderText = "Mã Sinh Viên";
-            this.maSinhVienDataGridViewTextBoxColumn.Name = "maSinhVienDataGridViewTextBoxColumn";
-            this.maSinhVienDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // tenDataGridViewTextBoxColumn
-            // 
-            this.tenDataGridViewTextBoxColumn.DataPropertyName = "HovaTen";
-            this.tenDataGridViewTextBoxColumn.HeaderText = "Họ và tên";
-            this.tenDataGridViewTextBoxColumn.Name = "tenDataGridViewTextBoxColumn";
-            this.tenDataGridViewTextBoxColumn.ReadOnly = true;
-            this.tenDataGridViewTextBoxColumn.Width = 200;
-            // 
-            // gioiTinhDataGridViewTextBoxColumn
-            // 
-            this.gioiTinhDataGridViewTextBoxColumn.DataPropertyName = "GIOITINHStr";
-            this.gioiTinhDataGridViewTextBoxColumn.HeaderText = "Giới Tính";
-            this.gioiTinhDataGridViewTextBoxColumn.Name = "gioiTinhDataGridViewTextBoxColumn";
-            this.gioiTinhDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // ngaySinhDataGridViewTextBoxColumn
-            // 
-            this.ngaySinhDataGridViewTextBoxColumn.DataPropertyName = "NgaySinh";
-            this.ngaySinhDataGridViewTextBoxColumn.HeaderText = "Ngày Sinh";
-            this.ngaySinhDataGridViewTextBoxColumn.Name = "ngaySinhDataGridViewTextBoxColumn";
-            this.ngaySinhDataGridViewTextBoxColumn.Width = 200;
-            // 
-            // diaChiDataGridViewTextBoxColumn
-            // 
-            this.diaChiDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.diaChiDataGridViewTextBoxColumn.DataPropertyName = "DiaChi";
-            this.diaChiDataGridViewTextBoxColumn.HeaderText = "Địa Chỉ";
-            this.diaChiDataGridViewTextBoxColumn.Name = "diaChiDataGridViewTextBoxColumn";
-            // 
-            // sinhvienBindingSource
-            // 
-            this.sinhvienBindingSource.DataSource = typeof(WindowsFormsApp1.Model.Sinhvien);
             // 
             // QLSVForm
             // 
@@ -302,11 +303,11 @@ namespace WindowsFormsApp1
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSinhvien)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sinhvienBindingSource)).EndInit();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.sinhvienBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
